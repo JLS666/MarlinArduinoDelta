@@ -255,7 +255,7 @@
  */
 
 #include "Marlin.h"
-#include "tmc2130_kd.h"
+
 #include "ultralcd.h"
 #include "planner.h"
 #include "stepper.h"
@@ -15032,9 +15032,6 @@ void stop() {
  *    • status LEDs
  */
 void setup() {
- // SPI.begin();
- // tmc2130_init(); ???
-
 
   #if ENABLED(MAX7219_DEBUG)
     max7219.init();
@@ -15376,8 +15373,5 @@ void loop() {
     }
   }
   endstops.event_handler();
-
-  // ??? HIER I2C SCHNITSTELLE ???
-
   idle();
 }

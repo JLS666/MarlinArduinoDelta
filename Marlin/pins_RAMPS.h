@@ -124,14 +124,14 @@
 #define E0_STEP_PIN        26
 #define E0_DIR_PIN         28
 #define E0_ENABLE_PIN      24
-#ifdef E0_CS_PIN
+#ifndef E0_CS_PIN
   #define E0_CS_PIN        42
 #endif
 
 #define E1_STEP_PIN        36
 #define E1_DIR_PIN         34
 #define E1_ENABLE_PIN      30
-#ifdef E1_CS_PIN
+#ifndef E1_CS_PIN
   #define E1_CS_PIN        44
 #endif
 
