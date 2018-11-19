@@ -15373,5 +15373,8 @@ void loop() {
     }
   }
   endstops.event_handler();
+
+  // ??? HIER I2C SCHNITSTELLE ???
+
   idle();
 }
